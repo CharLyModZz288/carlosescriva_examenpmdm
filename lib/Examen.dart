@@ -1,5 +1,7 @@
 import 'package:carlosescriva_examenpmdm/OnBoarding/LoginView.dart';
+import 'package:carlosescriva_examenpmdm/OnBoarding/PerfilView.dart';
 import 'package:carlosescriva_examenpmdm/OnBoarding/RegisterView.dart';
+import 'package:carlosescriva_examenpmdm/main/HomeView.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -12,6 +14,9 @@ class Examen extends StatelessWidget{
       routes: {
         '/loginview':(context)=>LoginView(),
         '/registerview':(context)=>RegisterView(),
+        '/perfilview':(context)=>PerfilView(),
+        '/homeview':(context)=>HomeView(),
+
       },
         initialRoute:'/loginview' ,
       );
