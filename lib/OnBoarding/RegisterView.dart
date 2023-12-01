@@ -36,6 +36,7 @@ class RegisterView extends StatelessWidget{
         } else if (e.code == 'email-already-in-use') {
           print('The account already exists for that email.');
         }
+
       } catch (e) {
         print(e);
       }
@@ -53,22 +54,22 @@ class RegisterView extends StatelessWidget{
     _context=context;
 
     Column columna = Column(children: [
-      Text("Bienvenido a Kyty Register",style: TextStyle(fontSize: 25)),
+      Text("Bienvenido al Examen de Carlos Escriva Segovia de PMDM",style: TextStyle(fontSize: 25)),
 
       Padding(padding: EdgeInsets.symmetric(horizontal: 60, vertical: 16),
         child: KTTextField(tecController: tecUsername,
-            sHint:'Escribe tu usuario'),
+            sHint:'Escribe tu Usuario'),
       ),
 
       Padding(padding: EdgeInsets.symmetric(horizontal: 60, vertical: 16),
         child: KTTextField(tecController: tecPassword,
-            sHint:'Escribe tu password',
+            sHint:'Escribe tu Contraseña',
             blIsPassword: true,),
       ),
 
       Padding(padding: EdgeInsets.symmetric(horizontal: 60, vertical: 16),
         child: KTTextField(tecController: tecRespass,
-          sHint:'Repite tu password',
+          sHint:'Repite tu Contraseña',
           blIsPassword: true,),
       ),
 
@@ -85,7 +86,7 @@ class RegisterView extends StatelessWidget{
       title: const Text('Register'),
       centerTitle: true,
       shadowColor: Colors.pink,
-      backgroundColor: Colors.greenAccent,
+      backgroundColor: Colors.deepPurple,
     );
 
     Scaffold scaf=Scaffold(body: columna,

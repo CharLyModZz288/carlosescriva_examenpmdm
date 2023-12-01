@@ -1,7 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:kyty/OnBoarding/RegisterView.dart';
 
 import '../Custom/KTTextField.dart';
 import '../FirestoreObjects/FbUsuario.dart';
@@ -68,7 +67,7 @@ class LoginView extends StatelessWidget{
 
 
     Column columna = Column(children: [
-      Text("Bienvenido a Kyty Login",style: TextStyle(fontSize: 25)),
+      Text("Bienvenido al login del examenPMDM de Carlos Escriva Segovia",style: TextStyle(fontSize: 25)),
 
       Padding(padding: EdgeInsets.symmetric(horizontal: 60, vertical: 16),
         child: KTTextField(tecController: tecUsername,
@@ -77,14 +76,14 @@ class LoginView extends StatelessWidget{
 
       Padding(padding: EdgeInsets.symmetric(horizontal: 60, vertical: 16),
         child: KTTextField(tecController: tecPassword,
-            sHint:'Escribe tu Password',
+            sHint:'Escribe tu Contraseña',
             blIsPassword: true),
       ),
 
       Row(mainAxisAlignment: MainAxisAlignment.center,
         children: [
         TextButton(onPressed: onClickAceptar, child: Text("Aceptar"),),
-        TextButton( onPressed: onClickRegistrar, child: Text("REGISTRO"),)
+        TextButton( onPressed: onClickRegistrar, child: Text("Registrarse"),)
       ],)
 
         
@@ -94,7 +93,8 @@ class LoginView extends StatelessWidget{
       title: const Text('Login'),
       centerTitle: true,
       shadowColor: Colors.pink,
-      backgroundColor: Colors.greenAccent,
+      backgroundColor: Colors.deepPurple,
+
     );
 
     Scaffold scaf=Scaffold(body: columna,
