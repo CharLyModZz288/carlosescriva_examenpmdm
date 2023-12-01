@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "616451809722",
+    "project_id": "examenpmdmcarlosescriva",
+    "storage_bucket": "examenpmdmcarlosescriva.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616451809722:android:447c489743312ca00b3d83",
+        "android_client_info": {
+          "package_name": "com.example.carlosescriva_examenpmdm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALlOz9jLa3NFb4CTpLTw_pIo50u7dCPgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
