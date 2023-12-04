@@ -6,6 +6,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
+import 'Splash/SplashView.dart';
+import 'main/PostCreateView.dart';
+import 'main/PostView.dart';
+
 class Examen extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -14,11 +18,13 @@ class Examen extends StatelessWidget{
       routes: {
         '/loginview':(context)=>LoginView(),
         '/registerview':(context)=>RegisterView(),
-        '/perfilview':(context)=>PerfilView(),
         '/homeview':(context)=>HomeView(),
-
+        '/splashview':(context) => SplashView(),
+        '/perfilview':(context) => PerfilView(),
+        '/postview':(context) => PostView(),
+        '/postcreateview':(context) => PostCreateView(),
       },
-        initialRoute:'/homeview' ,
+        initialRoute:'/splashview' ,
       );
 
   return materialApp;
