@@ -18,7 +18,7 @@ class Examen extends StatelessWidget{
         '/homeview':(context)=>HomeView(),
 
       },
-        initialRoute:'/loginview' ,
+        initialRoute:'/homeview' ,
       );
 
   return materialApp;
