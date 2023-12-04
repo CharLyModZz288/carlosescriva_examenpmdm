@@ -4,11 +4,14 @@ import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:carlosescriva_examenpmdm/FirestoreObjects/FbPost.dart';
+import 'package:carlosescriva_examenpmdm/OnBoarding/LoginView.dart';
+import 'package:carlosescriva_examenpmdm/Singletone/DataHolder.dart';
 
+import '../Custom/BottomMenu.dart';
+import '../Custom/PostCellView.dart';
+import '../Custom/PostGridCellView.dart';
 import '../Custom/DrawerClass.dart';
-import '../FirestoreObjects/FbPost.dart';
-import '../OnBoarding/LoginView.dart';
-import '../Singletone/DataHolder.dart';
 
 
 class HomeView extends StatefulWidget {
@@ -86,11 +89,11 @@ class _HomeViewState extends State<HomeView>{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      appBar: AppBar(title: Text("KYTY"),),
+      appBar: AppBar(title: Text("Examen Carlos Escriva Segovia"),),
       body: Center(
-        //child: celdasOLista(bIsList),
+        child: celdasOLista(bIsList),
       ),
-      //bottomNavigationBar: BottomMenu(onBotonesClicked: this.onBottonMenuPressed),
+      bottomNavigationBar: BottomMenu(onBotonesClicked: this.onBottonMenuPressed),
       drawer: DrawerClass(onItemTap: fHomeViewDrawerOnTap,),
       floatingActionButton:FloatingActionButton(
         onPressed: () {
@@ -114,16 +117,16 @@ class _HomeViewState extends State<HomeView>{
   /**
    *
    */
-  /*Widget? creadorDeItemLista(BuildContext context, int index){
+  Widget? creadorDeItemLista(BuildContext context, int index){
     return PostCellView(sText: posts[index].titulo,
         dFontSize: 30,
         iColorCode: 0,
         iPosicion: index,
         onItemListClickedFun:onItemListClicked
     );
-  }*/
+  }
 
-  /*Widget? creadorDeItemMatriz(BuildContext context, int index){
+  Widget? creadorDeItemMatriz(BuildContext context, int index){
     return PostGridCellView(sText: posts[index].titulo,
         dFontSize: 28,
         iColorCode: 0,
@@ -131,7 +134,7 @@ class _HomeViewState extends State<HomeView>{
         iPosicion: index,
         onItemListClickedFun:onItemListClicked
     );
-  }*/
+  }
 
   Widget creadorDeSeparadorLista(BuildContext context, int index) {
     //return Divider(thickness: 5,);
@@ -144,7 +147,7 @@ class _HomeViewState extends State<HomeView>{
     );
   }
 
-  /*Widget celdasOLista(bool isList) {
+  Widget celdasOLista(bool isList) {
     if (isList) {
       return ListView.separated(
         padding: EdgeInsets.all(8),
@@ -159,7 +162,7 @@ class _HomeViewState extends State<HomeView>{
           itemBuilder: creadorDeItemMatriz
       );
     }
-  }*/
+  }
 
 
 
