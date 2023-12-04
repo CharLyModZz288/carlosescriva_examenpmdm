@@ -31,7 +31,7 @@ class PostGridCellView extends StatelessWidget{
             decoration: BoxDecoration(
                 image: DecorationImage(
                     opacity: 0.3,
-                    image: NetworkImage("https://media.tenor.com/zBc1XhcbTSoAAAAC/nyan-cat-rainbow.gif"),
+                    image: NetworkImage("https://media.tenor.com/Gce3OKSXeQIAAAAC/perro-bailando.gif"),
                     fit: BoxFit.cover
                 )
             ),
