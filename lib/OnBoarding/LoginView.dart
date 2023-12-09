@@ -68,7 +68,7 @@ class LoginView extends StatelessWidget{
 
 
     Column columna = Column(children: [
-      Text("Bienvenido a Kyty Login",style: TextStyle(fontSize: 25)),
+      Text("Bienvenido al examen De Carlos Escriva Segovia",style: TextStyle(fontSize: 25)),
 
       Padding(padding: EdgeInsets.symmetric(horizontal: 60, vertical: 16),
         child: KTTextField(tecController: tecUsername,

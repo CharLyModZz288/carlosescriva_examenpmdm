@@ -9,7 +9,7 @@ class DataHolder {
 
   static final DataHolder _dataHolder = DataHolder._internal();
 
-  String sNombre="Kyty DataHolder";
+  String sNombre="DataHolder de Carlos Escriva";
   late String sPostTitle;
   FbPost? selectedPost;
   FirebaseFirestore db = FirebaseFirestore.instance;

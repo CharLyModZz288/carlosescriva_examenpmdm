@@ -22,7 +22,7 @@ class KTTextField extends StatelessWidget{
 
     return Padding(padding: EdgeInsets.symmetric(horizontal: dPaddingH, vertical: dPaddingV),
       child: Row(children: [
-        Image.asset("resources/logo_kyty2.png",width: 50, height: 50),
+        Image.asset("resources/logo_pmdm.png",width: 50, height: 50),
         Flexible(
           child: TextFormField(
               controller: tecController,
